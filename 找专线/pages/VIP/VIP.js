@@ -147,7 +147,6 @@ Page({
   },
   callBtn: function(e){
     var phoneNum = e.currentTarget.dataset.phone;
-    console.log(phoneNum)
     wx.makePhoneCall({
       phoneNumber: phoneNum,
     })
