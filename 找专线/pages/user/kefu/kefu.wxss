@@ -1,0 +1,17 @@
+@import "../../static/fonts/iconfont.wxss";
+
+button{
+  margin-top: 50rpx;
+  margin-left: 30rpx;
+  width: 690rpx;
+  background-color: #ff5b5a;
+  color: #fff;
+}
+button .iconfont{
+  padding-right: 20rpx;
+  font-size: 42rpx;
+}
+.button-hover{
+  background-color: #ff7271;
+  color: #fff;
+}

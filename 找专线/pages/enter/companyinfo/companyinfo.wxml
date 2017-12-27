@@ -1,0 +1,50 @@
+<form bindsubmit="formSubmit">
+  <view class='infoBox'>
+    <view class='infoBox_li'>
+      <text class='comName'>公司名称：</text>
+      <input name='comName' class='comName1' placeholder='请输入公司名称' placeholder-style='color:#999' value='{{comName}}'/>
+    </view>
+    <view class='infoBox_li'>
+      <text class='contacts'>联系人：</text>
+      <input name='contacts' class='contacts1' placeholder='请输入联系人' placeholder-style='color:#999' value='{{contacts}}'/>
+    </view>
+    <view class='infoBox_li'>
+      <text class='phone'>联系电话：</text>
+      <input name='phone' class='phone1' placeholder='请输入联系电话' placeholder-style='color:#999' value='{{phone}}' type='number'/>
+    </view>
+    <view class='infoBox_li'>
+      <text class='comAddr'>公司地址：</text>
+      <input name='comAddr' class='comAddr1' placeholder='请输入公司地址' placeholder-style='color:#999' value='{{comAddr}}'/>
+    </view>
+  </view>
+  <view class='disclaimer'>
+    <view class='Btn iconfont icon-iconfontwancheng' bindtap='disclaimerBtn'>
+      <view class='iconfont icon-dui' wx:if="{{btnok}}"></view>
+    </view>
+    <text class='b'>免责说明</text>
+    <text class='r'>《江南达物流用户协议》</text>
+  </view>
+  <view class='picture'>
+    <text class='txt'>公司图片</text>
+    <view class='pic1 iconfont icon-xiangji' bindtap='changePic1'>
+      <image src='{{picSrc[0]}}' />
+    </view>
+    <text class='txt1'>手持身份证</text>
+    <view class='pic2 iconfont icon-xiangji' bindtap='changePic2'>
+      <image src='{{picSrc[1]}}' />
+    </view>
+    <text class='txt2'>营业执照</text>
+    <view class='pic3 iconfont icon-xiangji' bindtap='changePic3'>
+      <image src='{{picSrc[2]}}' />
+    </view>
+    <text class='txt3'>公司门面图</text>
+    <view class='pic4 iconfont icon-xiangji' bindtap='changePic4'>
+      <image src='{{picSrc[3]}}' />
+    </view>
+    <text class='txt4'>公司门面图</text>
+  </view>
+
+  <view class='submitBtn'>
+    <button formType="submit">保存</button>
+  </view>
+</form>

@@ -1,0 +1,230 @@
+@import "../static/fonts/iconfont.wxss";
+@import "../static/wxss/public.wxss";
+
+.body{
+  width: 100%;
+}
+.header{
+  position: relative;
+  width: 100%;
+  height: 108rpx;
+  background-color: #fff;
+}
+.header .huoyuan{
+  position: absolute;
+  top: 20rpx;
+  left: 130rpx;
+  width: 165rpx;
+  height: 65rpx;
+  font-size: 30rpx;
+  line-height: 65rpx;
+  text-align: center;
+  border: 2rpx solid #ff5b5a;
+}
+.header .cheyuan{
+  position: absolute;
+  top: 20rpx;
+  left: 295rpx;
+  width: 165rpx;
+  height: 65rpx;
+  font-size: 30rpx;
+  line-height: 65rpx;
+  text-align: center;
+  border: 2rpx solid #ff5b5a;
+}
+.header .inter{
+  position: absolute;
+  top: 20rpx;
+  left: 460rpx;
+  width: 165rpx;
+  height: 65rpx;
+  font-size: 30rpx;
+  line-height: 65rpx;
+  text-align: center;
+  border: 2rpx solid #ff5b5a;
+}
+.header .active{
+  background-color: #ff5b5a;
+  color: #fff;
+}
+.startaddr,
+.freetime{
+  position: relative;
+  width: 100%;
+  height: 85rpx;
+  background-color: #eee;
+  border-bottom: 13rpx solid #fff;
+}
+.endaddr{
+  position: relative;
+  width: 100%;
+  height: 85rpx;
+  background-color: #eee;
+}
+.startaddr .pickerBox,
+.endaddr .pickerBox,
+.freetime .pickerBox{
+  position: absolute;
+  top: 10rpx;
+  left: 30rpx;
+  height: 65rpx;
+  width: 170rpx;
+  border-radius: 8rpx;
+  background-color: #fff;
+}
+.startaddr .pickerBox .picker,
+.endaddr .pickerBox .picker,
+.freetime .pickerBox .picker{
+  position: absolute;
+  top: 0;
+  left: 17rpx;
+  width: 110rpx;
+  font-size: 30rpx;
+  line-height: 65rpx;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.freetime .pickerBox .picker{
+  width: 136rpx;
+  text-align: center;
+}
+.startaddr .pickerBox .iconfont,
+.endaddr .pickerBox .iconfont{
+  position: absolute;
+  top: 26rpx;
+  right: 15rpx;
+  font-size: 20rpx;
+  color: #666;
+}
+.startaddr input,
+.endaddr input,
+.freetime .fTchange{
+  position: absolute;
+  top: 10rpx;
+  left: 210rpx;
+  height: 65rpx;
+  width: 500rpx;
+  font-size: 30rpx;
+  color: #333;
+  padding: 0 10rpx;
+  border-radius: 8rpx;
+  background-color: #fff;
+}
+.freetime .fTchange picker{
+  display: inline-block;
+  height: 65rpx;
+  width: 45%;
+  line-height: 65rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.content{
+  width: 100%;
+  background-color: #fff;
+}
+.content .cont_li{
+  width: 100%;
+  height: 85rpx;
+  border-bottom: 2rpx solid #bbb;
+}
+.content .cont_li .Box,
+.content .cont_li .Box_p
+{
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+}
+.content .cont_li .Box_p{
+  width: 100%;
+}
+.cont_li .weight,
+.cont_li .startT,
+.cont_li .phone,
+.cont_li .remark,
+.cont_li .endT,
+.cont_li .goodstype,
+.cont_li .volume,
+.cont_li .contacts{
+  position: absolute;
+  top: 26rpx;
+  left: 20rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+.cont_li .weight1,
+.cont_li .phone1,
+.cont_li .remark1,
+.cont_li .goodstype1,
+.cont_li .volume1,
+.cont_li .contacts1{
+  position: absolute;
+  top: 20rpx;
+  left: 110rpx;
+  width: 275rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.cont_li .contacts1{
+  left: 140rpx;
+  width: 220rpx;
+}
+.phone_h .phone1{
+  width: 610rpx;
+}
+.cont_li .goodstype1{
+  left: 170rpx;
+  width: 550rpx;
+}
+.cont_li .remark1{
+  width: 610rpx;
+}
+.cont_li .weight2,
+.cont_li .volume2{
+  position: absolute;
+  top: 26rpx;
+  left: 330rpx;
+  font-size: 30rpx;
+  color: #bbb;
+}
+.cont_li .pickerBox{
+  position: absolute;
+  top: 0rpx;
+  left: 110rpx;
+  width: 250rpx;
+  height: 85rpx;
+  line-height: 85rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.date .pickerBox,
+.goods .pickerBox{
+  position: absolute;
+  top: 0rpx;
+  left: 170rpx;
+  width: 550rpx;
+  height: 85rpx;
+  line-height: 85rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.date .pickerBox picker{
+  width: 50%;
+  display: inline-block;
+}
+.cont_li .pickerBox .iconfont{
+  position: absolute;
+  top: 8rpx;
+  right: 0;
+  font-size: 20rpx;
+  color: #666;
+}
+.content .fabuBtn{
+  padding: 50rpx 35rpx;
+  width: 680rpx;
+}
+.content .fabuBtn button{
+  background-color: #ff5b5a;
+  color: #fff;
+}

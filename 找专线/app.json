@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/vipuser/vipuser",
+    "pages/index/register/register",
+    "pages/index/losepwd/losepwd",
+    "pages/JPJC/JPJC",
+    "pages/LKZX/LKZX",
+    "pages/LUYUN/LUYUN",
+    "pages/VIP/VIP",
+    "pages/release/release",
+    "pages/enter/share/share",
+    "pages/enter/add/add",
+    "pages/enter/add/myzhuanxian/myzhuanxian",
+    "pages/enter/companyinfo/companyinfo",
+    "pages/enter/privilege/privilege",
+    "pages/detail/huodetail/huodetail",
+    "pages/detail/chedetail/chedetail",
+    "pages/detail/vipdetail/vipdetail",
+    "pages/user/yuyue/yuyue",
+    "pages/user/yuyue/myyuyue/myyuyue",
+    "pages/user/kefu/kefu",
+    "pages/user/qrcode/qrcode",
+    "pages/user/advice/advice"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff5b5a",
+    "navigationBarTitleText": "江南达物流",
+    "navigationBarTextStyle":"white"
+  }
+}

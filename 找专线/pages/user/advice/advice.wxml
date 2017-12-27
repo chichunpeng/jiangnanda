@@ -1,0 +1,15 @@
+<form bindsubmit="formSubmit">
+  <view class='name'>
+    <text>联系人：</text>
+    <input name='name' placeholder='请输入您的姓名' placeholder-style='color:#bbb'/>
+  </view>
+  <view class='phone'>
+    <text>联系电话：</text>
+    <input name='phone' placeholder='请输入您的电话' placeholder-style='color:#bbb' type='number'/>
+  </view>
+  <view class='advice'>
+    <text>意见反馈：</text>
+    <textarea name='advice' placeholder='请输入您的意见' placeholder-style='color:#bbb'></textarea>
+  </view>
+  <button formType="submit">提交</button>
+</form>

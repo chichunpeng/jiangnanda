@@ -1,0 +1,49 @@
+.name,
+.phone,
+.advice{
+  position: relative;
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.advice{
+  height: 250rpx;
+  border: none;
+}
+.name text,
+.phone text,
+.advice text{
+  position: absolute;
+  top: 35rpx;
+  left: 30rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.name input,
+.phone input,
+.advice textarea{
+  position: absolute;
+  top: 25rpx;
+  left: 200rpx;
+  width: 500rpx;
+  height: 60rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+.advice textarea{
+  position: absolute;
+  height: 200rpx;
+  padding: 10rpx 0;
+  border: 2rpx solid #eee;
+}
+button{
+  margin-top: 60rpx;
+  margin-left: 30rpx;
+  width: 690rpx;
+  background-color: #ff5b5a;
+  color: #fff;
+}
+.button-hover{
+  background-color: #ff7271;
+  color: #fff;
+}

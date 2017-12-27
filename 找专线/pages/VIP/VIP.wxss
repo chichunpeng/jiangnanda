@@ -1,0 +1,88 @@
+@import "../static/fonts/iconfont.wxss";
+@import "../static/wxss/public.wxss";
+
+.search .start,
+.search .end{
+  width: 185rpx;
+}
+.search .end{
+  left: 300rpx;
+}
+.search .line{
+  left: 230rpx;
+}
+.list{
+  position: relative;
+  width: 100%;
+  height: 170rpx;
+  border-bottom: 12rpx solid #eee;
+}
+.list image{
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+  width: 170rpx;
+  height: 130rpx;
+}
+.list .title{
+  position: absolute;
+  top: 27rpx;
+  left: 210rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.list .com{
+  position: absolute;
+  top: 77rpx;
+  left: 210rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+.list .phone{
+  position: absolute;
+  top: 123rpx;
+  left: 210rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+.list .iconfont{
+  position: absolute;
+  top: 40rpx;
+  right: 40rpx;
+  height: 100rpx;
+  width: 100rpx;
+  font-size: 46rpx;
+  line-height: 100rpx;
+  background-color: #00c820;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+}
+.zhuanxian{
+  position: relative;
+  width: 100%;
+  height: 100rpx;
+}
+.zhuanxian .box{
+  position: absolute;
+  top: 20rpx;
+  left: 150rpx;
+  height: 70rpx;
+  width: 450rpx;
+  border: 2rpx solid #ff5b5a;
+  border-radius: 38rpx;
+}
+.zhuanxian .box .local,
+.zhuanxian .box .abroad{
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 70rpx;
+  text-align: center;
+  border-radius: 35rpx;
+}
+.zhuanxian .box .active{
+  color: #fff;
+  background-color: #ff5b5a;
+}

@@ -1,0 +1,63 @@
+@import "../../../static/wxss/public.wxss";
+
+.addr,
+.info{
+  width: 100%;
+}
+.addr_li,
+.info_li{
+  position: relative;
+  width: 690rpx;
+  height: 80rpx;
+  margin-left: 30rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.addr_li .start,
+.addr_li .end,
+.info_li text{
+  position: absolute;
+  top: 25rpx;
+  left: 0;
+  font-size: 30rpx;
+  color: #333;
+}
+.addr_li .start1,
+.addr_li .end1{
+  position: absolute;
+  top: 0;
+  left: 140rpx;
+  width: 510rpx;
+  font-size: 30rpx;
+  color: #333;
+  line-height: 80rpx;
+}
+.info_li input{
+  position: absolute;
+  top: 20rpx;
+  left: 130rpx;
+  width: 550rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.tit{
+  position: relative;
+  width: 100%;
+  height: 80rpx;
+  background-color: #eee;
+}
+.tit text{
+  position: absolute;
+  top: 20rpx;
+  left: 30rpx;
+  font-size: 30rpx;
+  color: #ff5b5a;
+}
+.submitBtn{
+  padding-top: 60rpx;
+}
+.submitBtn button{
+  width: 690rpx;
+  margin-left: 30rpx;
+  background-color: #ff5b5a;
+  color: #fff;
+}

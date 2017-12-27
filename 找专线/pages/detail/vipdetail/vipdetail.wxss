@@ -1,0 +1,36 @@
+image{
+  width: 100%;
+  height: 320rpx;
+}
+.comName{
+  width: 100%;
+  height: 80rpx;
+  font-size: 40rpx;
+  font-weight: bolder;
+  line-height: 80rpx;
+  text-align: center;
+  color: #333;
+  border-bottom: 20rpx solid #eee;
+}
+.route,
+.contacts,
+.phone,
+.comAddr{
+  width: 92%;
+  margin-left: 4%;
+  height: 100rpx;
+  font-size: 36rpx;
+  font-weight: bolder;
+  line-height: 100rpx;
+  text-align: center;
+  color: #333;
+  border-bottom: 2rpx solid #eee;
+}
+.contacts,
+.phone,
+.comAddr{
+  font-size: 30rpx;
+  font-weight: normal;
+  color: #666;
+  text-align: left;
+}

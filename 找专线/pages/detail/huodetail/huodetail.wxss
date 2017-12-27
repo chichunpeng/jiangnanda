@@ -1,0 +1,122 @@
+@import "../../static/fonts/iconfont.wxss";
+
+.body{
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+}
+.header{
+  position: relative;
+  width: 100%;
+  height: 170rpx;
+  background-color: #fff;
+  border-bottom: 20rpx solid #eee;
+  border-top: 20rpx solid #eee;
+}
+.header image{
+  position: absolute;
+  top: 40rpx;
+  left: 50rpx;
+  width: 110rpx;
+  height: 110rpx;
+}
+.header .tit{
+  position: absolute;
+  top: 70rpx;
+  left: 190rpx;
+  color: #333;
+  font-size: 32rpx;
+}
+.header .tousu{
+  position: absolute;
+  top: 70rpx;
+  right: 30rpx;
+  font-size: 30rpx;
+  color: #ff5b5a;
+}
+.content{
+  width: 100%;
+  background-color: #fff;
+}
+.content .con_top,
+.content .con_phone,
+.content .con_remark{
+  position: relative;
+  width: 100%;
+  height: 360rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.content .con_top .icon-hezi,
+.content .con_top .icon-truck{
+  position: absolute;
+  top: 35rpx;
+  left: 30rpx;
+  font-size: 36rpx;
+  color: #ff5b5a;
+  font-weight: bold;
+}
+.content .con_top .route{
+   position: absolute;
+   top: 30rpx;
+   left: 85rpx;
+   font-size: 36rpx;
+   color: #333;
+}
+.content .con_top .stime,
+.content .con_top .etime,
+.content .con_top .weight,
+.content .con_top .goods,
+.content .con_top .volume{
+   position: absolute;
+   top: 90rpx;
+   left: 30rpx;
+   font-size: 30rpx;
+   color: #333;
+}
+.content .con_top .etime{
+  top: 140rpx;
+}
+.content .con_top .goods{
+  top: 190rpx;
+}
+.content .con_top .weight{
+  top: 240rpx;
+}
+.content .con_top .volume{
+   top: 240rpx;
+   left: 350rpx;
+}
+.content .con_top .time{
+  position: absolute;
+  top: 300rpx;
+  left: 30rpx;
+  font-size: 32rpx;
+  color: #999;
+}
+.content .con_phone{
+  height: 100rpx;
+}
+.content .con_phone .phone{
+  position: absolute;
+  top: 30rpx;
+  left: 30rpx;
+  font-size: 32rpx;
+  color: #999;
+}
+.content .con_phone .icon-dianhua{
+  position: absolute;
+  top: 20rpx;
+  right: 30rpx;
+  font-size: 60rpx;
+  color: #00c820;
+}
+.content .con_remark{
+  height: 80rpx;
+}
+.content .con_remark .ps{
+  position: absolute;
+  top: 20rpx;
+  left: 30rpx;
+  font-size: 30rpx;
+  color: #999;
+}

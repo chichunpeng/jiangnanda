@@ -1,0 +1,36 @@
+<view class='zhuanxian'>
+  <view class='box'>
+    <view class="local {{islocal?'active':''}}" bindtap='localzhuan'>国内专线</view>
+    <view class="abroad {{isabroad?'active':''}}" bindtap='abroadzhuan'>国际专线</view>
+  </view>
+</view>
+<view class='search'>
+  <view class='start' bindtap='startBtn'>
+    {{start_txt}}
+    <text class='iconfont icon-xialajiantouxiangxia' wx:if="{{start_txt == '起点'}}"></text>
+  </view>
+  <view class='end' bindtap='endBtn'>
+    {{end_txt}}
+    <text class='iconfont icon-xialajiantouxiangxia' wx:if="{{end_txt == '终点'}}"></text></view>
+  <view class='Btn' bindtap='search'>搜索</view>
+  <view class='line'></view>
+</view>
+<!-- 选择城市 -->
+<view class='changeCity' wx:if="{{cityshow}}">
+  <view class='local'>
+    <view class='tit'>当前城市<view class='close' bindtap='close'>关闭</view></view>
+    <view class='city' bindtap='changeL'>{{local}}</view>
+  </view>
+  <view class='allcity'>
+    <view class='tit'>所有城市<view class='back' bindtap='back'>返回</view></view>
+    <view class='city' wx:for='{{list}}' wx:for-item="item" wx:key='' data-index='{{index}}' bindtap="{{isP?'changeP':'changeC'}}">{{item}}</view>
+  </view>
+</view>
+<!-- 专线列表 -->
+<view class='list' wx:for='{{zhuanxian}}' wx:for-item="item" wx:key='' data-id='{{item.id}}' bindtap='toVipdetail'>
+  <image src='{{item.comPic}}'></image>
+  <text class='title'>{{item.startcity}}到{{item.endcity}}物流专线</text>
+  <text class='com'>{{item.comName}}</text>
+  <text class='phone'>{{item.phone}}</text>
+  <view class='iconfont icon-dianhua1' catchtap='callBtn' data-phone='{{item.phone}}'></view>
+</view>

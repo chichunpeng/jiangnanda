@@ -1,0 +1,21 @@
+<view class='Login_box'>
+  <view class='wxinfo'>
+    <image src='{{userinfo.avatarUrl}}'></image>
+    <text class='wxname'>{{userinfo.nickName}}</text>
+    <text class='vipID'>VIPID：{{vipid}}</text>
+  </view>
+  <text class='warning'>（注意：请务必记住VIPID，VIPID将作为登录ID！）</text>
+  <view class='password'>
+    <view class='iconfont icon-mima'></view>
+    <input placeholder="{{isRegister?'请输入密码':'请输入新密码'}}" password='true' bindinput='CheckPwd'></input>
+  </view>
+  <view class='iconfont icon-dui pwdT' wx:if='{{Checkpwd}}'></view>
+  <text class='pwdF'>{{CheckpwdTxt}}</text>
+  <view class='password2'>
+    <view class='iconfont icon-mima'></view>
+    <input placeholder='再次输入密码' password='true' bindinput='CheckPwd2'></input>
+  </view>
+  <view class='iconfont icon-dui pwd2T' wx:if='{{Checkpwd2}}'></view>
+  <text class='pwd2F'>{{Checkpwd2Txt}}</text>
+  <button class='register' bindtap='register'>{{isRegister?'注册':'修改密码'}}</button>
+</view>

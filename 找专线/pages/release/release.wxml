@@ -1,0 +1,197 @@
+<view class='body'>
+  <view class='header'>
+    <view class="huoyuan {{ishuo?'active':''}}" bindtap='huoyuan'>货源</view>
+    <view class="cheyuan {{ische?'active':''}}" bindtap='cheyuan'>车源</view>
+    <view class="inter {{isinter?'active':''}}" bindtap='inter'>国际</view>
+  </view>
+  <!-- 货源发布 -->
+  <form bindsubmit="huoyuanSubmit" wx:if='{{ishuo}}'>
+    <view class='startaddr'>
+      <view class='pickerBox' bindtap='startBtn'>
+        <view class="picker">{{start_txt}}</view>
+        <text class='iconfont icon-xialajiantouxiangxia'></text>
+      </view>
+      <input placeholder='详细地址' placeholder-style='color:#bbb' name='startaddr'/>
+    </view>
+    <view class='endaddr'>
+      <view class='pickerBox' bindtap='endBtn'>
+        <view class="picker">{{end_txt}}</view>
+        <text class='iconfont icon-xialajiantouxiangxia'></text>
+      </view>
+      <input placeholder='详细地址' placeholder-style='color:#bbb' name='endaddr'/>
+    </view>
+    <view class='content'>
+      <view class='cont_li'>
+        <view class='Box'>
+          <text class='weight'>重量：</text>
+          <input class='weight1' name='weight' type='digit'/>
+          <text class='weight2'>吨</text>
+        </view>
+        <view class='Box'>
+          <text class='volume'>体积：</text>
+          <input class='volume1' name='volume' type='digit'/>
+          <text class='volume2'>m³</text>
+        </view>
+      </view>
+      <view class='cont_li date'>
+        <view class='Box'>
+          <text class='startT'>装货时间：</text>
+          <view class='pickerBox'>
+            <picker mode="date" value="{{startDate}}" start="{{startT}}" end="{{endT}}" bindchange="SDateChange">
+              <view class="picker">
+                {{startDate}}
+              </view>
+            </picker>
+            <picker bindchange="sTimeChange" value="{{st}}" range="{{stime}}">
+              <view class="picker">
+                {{stime[st]}}点
+              </view>
+            </picker>
+          </view>
+        </view>
+      </view>
+      <view class='cont_li date'>
+        <view class='Box'>
+          <text class='endT'>交货时间：</text>
+          <view class='pickerBox'>
+            <picker mode="date" value="{{endDate}}" start="{{startT}}" end="{{endT}}" bindchange="EDateChange">
+              <view class="picker">
+                {{endDate}}
+              </view>
+            </picker>
+            <picker bindchange="eTimeChange" value="{{et}}" range="{{etime}}">
+              <view class="picker">
+                {{etime[et]}}点
+              </view>
+            </picker>
+          </view>
+        </view>
+      </view>
+      <view class='cont_li goods'>
+        <view class='Box'>
+          <text class='goodstype'>货物类型：</text>
+          <view class='pickerBox'>
+            <picker bindchange="Goodstypechange" value="{{goodstype_i}}" range="{{goodstype}}">
+              <view class="picker">
+                {{goodstype[goodstype_i]}}
+              </view>
+            </picker>
+            <text class='iconfont icon-xialajiantouxiangxia'></text>
+          </view>
+        </view>
+      </view>
+      <view class='cont_li phone_h'>
+        <view class='Box'>
+          <text class='phone'>手机：</text>
+          <input class='phone1' name='phone' type='number' placeholder='请输入手机号' placeholder-style='color:#bbb'/>
+        </view>
+      </view>
+      <view class='cont_li'>
+        <view class='Box_p'>
+          <text class='remark'>备注：</text>
+          <input class='remark1' placeholder='您可以输入一些希望补充的内容' placeholder-style='color:#bbb' name='remark'/>
+        </view>
+      </view>
+      <view class='fabuBtn'>
+        <button formType="submit">发布</button>
+      </view>
+    </view>
+  </form>
+  <!-- 车源发布 -->
+  <form bindsubmit="cheyuanSubmit" wx:if='{{ische}}'>
+    <view class='freetime'>
+      <view class='pickerBox'>
+        <view class="picker">空闲时间</view>
+      </view>
+      <view class='fTchange'>
+        <picker mode="date" value="{{freeDate}}" start="{{startT}}" end="{{endT}}" bindchange="FDateChange">
+          <view class="picker">
+            {{freeDate}}
+          </view>
+        </picker>
+        <picker bindchange="fTimeChange" value="{{ft}}" range="{{ftime}}">
+          <view class="picker">
+            {{ftime[ft]}}点
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class='startaddr'>
+      <view class='pickerBox' bindtap='startBtn'>
+        <view class="picker">{{start_txt}}</view>
+        <text class='iconfont icon-xialajiantouxiangxia'></text>
+      </view>
+      <input placeholder='详细地址' placeholder-style='color:#bbb' name='startaddr'/>
+    </view>
+    <view class='endaddr'>
+      <view class='pickerBox' bindtap='endBtn'>
+        <view class="picker">{{end_txt}}</view>
+        <text class='iconfont icon-xialajiantouxiangxia'></text>
+      </view>
+      <input placeholder='详细地址' placeholder-style='color:#bbb' name='endaddr'/>
+    </view>
+    <view class='content'>
+      <view class='cont_li'>
+        <view class='Box'>
+          <text class='weight'>载重：</text>
+          <input class='weight1' name='weight' type='digit'/>
+          <text class='weight2'>吨</text>
+        </view>
+      </view>
+      <view class='cont_li'>
+        <view class='Box'>
+          <text class='startT'>车长：</text>
+          <view class='pickerBox'>
+            <picker bindchange="Carlengthchange" value="{{carlength_i}}" range="{{carlength}}">
+              <view class="picker">
+                {{carlength[carlength_i]}}
+              </view>
+            </picker>
+            <text class='iconfont icon-xialajiantouxiangxia'></text>
+          </view>
+        </view>
+        <view class='Box'>
+          <text class='endT'>车型：</text>
+          <view class='pickerBox'>
+            <picker bindchange="Cartypechange" value="{{cartype_i}}" range="{{cartype}}">
+              <view class="picker">
+                {{cartype[cartype_i]}}
+              </view>
+            </picker>
+            <text class='iconfont icon-xialajiantouxiangxia'></text>
+          </view>
+        </view>
+      </view>
+      <view class='cont_li'>
+        <view class='Box'>
+          <text class='phone'>手机：</text>
+          <input class='phone1' name='phone' type='number' placeholder='请输入手机号' placeholder-style='color:#bbb'/>
+        </view>
+        <view class='Box'>
+          <text class='contacts'>联系人：</text>
+          <input class='contacts1' name='contacts' placeholder='请输入联系人' placeholder-style='color:#bbb'/>
+        </view>
+      </view>
+      <view class='cont_li'>
+        <view class='Box_p'>
+          <text class='remark'>备注：</text>
+          <input class='remark1' placeholder='您可以输入一些希望补充的内容' placeholder-style='color:#bbb' name='remark'/>
+        </view>
+      </view>
+      <view class='fabuBtn'>
+        <button formType="submit">发布</button>
+      </view>
+    </view>
+  </form>
+</view>
+
+<view class='changeCity' wx:if="{{cityshow}}">
+  <view class='local'>
+    <view class='tit'>当前城市<view class='close' bindtap='close'>关闭</view></view>
+    <view class='city' bindtap='changeL'>{{local}}</view>
+  </view>
+  <view class='allcity'>
+    <view class='tit'>所有城市<view class='back' bindtap='back'>返回</view></view>
+    <view class='city' wx:for='{{list}}' wx:for-item="item" wx:key='' data-index='{{index}}' bindtap="{{isP?'changeP':'changeC'}}">{{item}}</view>
+  </view>
+</view>

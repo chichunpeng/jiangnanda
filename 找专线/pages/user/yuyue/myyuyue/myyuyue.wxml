@@ -1,0 +1,35 @@
+<form bindsubmit="formSubmit">
+  <view class='yuyue'>
+    <view class='yuyue_li'>
+      <text>预约时间： {{date}}</text>
+    </view>
+    <view class='yuyue_li'>
+      <text>联系人：</text>
+      <input name='name' value='{{contacts}}'></input>
+    </view>
+    <view class='yuyue_li'>
+      <text>联系电话：</text>
+      <input name='phone' value='{{phone}}'></input>
+    </view>
+    <view class='remark'>
+      <text>具体事项:</text>
+      <textarea name='remark'></textarea>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='imgBox'>
+      <image src='../../../static/imgs/pic01.jpg'></image>
+      <view class='callBtn' bindtap='callBtn'>拨打电话</view>
+    </view>
+    <view class='prompt'>温馨提示</view>
+    <text class='prompt_li'><text class='dot'>·</text>下单前请一定确认预约沟通时间并保持手机通话流畅</text>
+    <text class='prompt_li'><text class='dot'>·</text>温馨提示：深夜下单第二日联系您</text>
+    <text class='prompt_li'><text class='dot'>·</text>服务流程：下单-接单-议价-服务</text>
+    <text class='prompt_li'><text class='dot'>·</text>特别交流：服务未完成订金可申请退款</text>
+  </view>
+  <view style='width:100%;height:80rpx;'></view>
+  <view class='bot'>
+    <view class='txt'>预约订金：￥10元</view>
+    <button formType="submit" open-type='contact' send-message-title='sada'>立即预约</button>
+  </view>
+</form>

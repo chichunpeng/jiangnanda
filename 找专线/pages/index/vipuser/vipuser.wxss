@@ -1,0 +1,104 @@
+@import "/pages/static/fonts/iconfont.wxss";
+.Login_box{
+  position: relative;
+  width: 100%;
+}
+.username,
+.password,
+.password2{
+  position: absolute;
+  top: 100rpx;
+  left: 75rpx;
+  width: 570rpx;
+  height: 100rpx;
+  border: 2rpx solid #eee;
+}
+.password{
+  top: 250rpx;
+}
+.password2{
+  top: 400rpx;
+}
+.username view,
+.password view,
+.password2 view{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100rpx;
+  width: 100rpx;
+  font-size: 60rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background-color: #ff7271;
+  color: #fff;
+}
+.username input,
+.password input,
+.password2 input{
+  position: absolute;
+  top: 0;
+  left: 101rpx;
+  width: 429rpx;
+  height: 100rpx;
+  padding: 0 20rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+.login{
+  position: absolute;
+  top: 420rpx;
+  left: 75rpx;
+  width: 600rpx;
+  background-color: #ff5b5a;
+  color: #fff;
+}
+.register{
+  position: absolute;
+  top: 560rpx;
+  left: 75rpx;
+  width: 600rpx;
+}
+.losepwd{
+  position: absolute;
+  top: 660rpx;
+  right: 60rpx;
+  padding: 0 20rpx;
+  font-size: 26rpx;
+  line-height: 60rpx;
+  color: #ff5b5a;
+}
+.userT,
+.pwdT,
+.pwd2T{
+  position: absolute;
+  top: 130rpx;
+  right: 40rpx;
+  width: 50rpx;
+  height: 50rpx;
+  font-size: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  color: #1AAD19;
+}
+.pwdT{
+  top: 280rpx;
+}
+.pwd2T{
+  top: 430rpx;
+}
+.userF,
+.pwdF,
+.pwd2F{
+  position: absolute;
+  top: 210rpx;
+  left: 180rpx;
+  font-size: 26rpx;
+  color: #ff5b5a;
+}
+.pwdF{
+  top: 360rpx;
+}
+.pwd2F{
+  top: 510rpx;
+}

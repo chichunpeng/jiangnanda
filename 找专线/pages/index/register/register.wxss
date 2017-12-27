@@ -1,0 +1,38 @@
+@import "/pages/index/vipuser/vipuser.wxss";
+
+.wxinfo{
+  position: absolute;
+  top: 80rpx;
+  left: 70rpx;
+  width: 610rpx;
+  height: 120rpx;
+}
+.wxinfo image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.wxinfo .wxname{
+  position: absolute;
+  top: 10rpx;
+  left: 140rpx;
+  font-size: 36rpx;
+  color: #333;
+}
+.wxinfo .vipID{
+  position: absolute;
+  bottom: 10rpx;
+  left: 140rpx;
+  font-size: 32rpx;
+  color: #333;
+}
+.warning{
+  position: absolute;
+  top: 210rpx;
+  left: 70rpx;
+  font-size: 26rpx;
+  color: #ff5b5a;
+}

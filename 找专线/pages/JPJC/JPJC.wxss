@@ -1,0 +1,138 @@
+@import "../static/fonts/iconfont.wxss";
+@import "../static/wxss/public.wxss";
+
+.pinhuo,
+.zhengche{
+  width: 100%;
+}
+.pinhuo_tit,
+.zhengche_tit{
+  height: 60rpx;
+  width: 96%;
+  padding-left: 4%;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  background-color: #eee;
+  color: #666;
+}
+.pinhuo_con,
+.zhengche_con{
+  width: 100%;
+}
+.pinhuo_con .tit,
+.zhengche_con .tit{
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.pinhuo_con .tit .qibu_tit,
+.pinhuo_con .tit .weight_tit,
+.pinhuo_con .tit .volume_tit,
+.pinhuo_con .tit .time_tit{
+  display: inline-block;
+  width: 22%;
+  height: 96rpx;
+  background-color: #ff5b5a;
+  color: #fff;
+  text-align: center;
+  border-right: 3rpx solid #fff;
+}
+.pinhuo_con .tit .qibu_tit{
+  width: 33%;
+}
+.pinhuo_con .tit .time_tit{
+  width: 23%;
+}
+text{
+  display: block;
+  font-size: 24rpx;
+  line-height: 48rpx;
+}
+.pinhuo_con .qibu_con,
+.pinhuo_con .weight_con,
+.pinhuo_con .volume_con,
+.pinhuo_con .time_con{
+  display: inline-block;
+  width: 22%;
+  height: 48rpx;
+  color: #333;
+  text-align: center;
+  border-right: 3rpx solid #eee;
+  border-bottom: 2rpx solid #eee;
+  vertical-align: top;
+}
+.pinhuo_con .qibu_con{
+  width: 33%;
+}
+.pinhuo_con .time_con{
+  border: none;
+}
+.zhengche_con .tit .cartype_tit,
+.zhengche_con .tit .price_tit,
+.zhengche_con .tit .time_tit{
+  display: inline-block;
+  width: 33%;
+  height: 48rpx;
+  background-color: #ff5b5a;
+  color: #fff;
+  text-align: center;
+  border-right: 4rpx solid #fff;
+  vertical-align: top;
+}
+.zhengche_con .cartype_con,
+.zhengche_con .price_con,
+.zhengche_con .time_con{
+  display: inline-block;
+  width: 33%;
+  height: 48rpx;
+  color: #333;
+  text-align: center;
+  border-right: 4rpx solid #eee;
+  border-bottom: 2rpx solid #eee;
+  vertical-align: top;
+}
+.zhengche_con .tit .time_tit{
+  width: 34%;
+}
+.zhengche_con .time_con{
+  border-right: none;
+}
+.explain{
+  width: 100%;
+}
+.explain .tit{
+  display: block;
+  height: 80rpx;
+  font-size: 36rpx;
+  color: #999;
+  line-height: 80rpx;
+  text-align: center;
+}
+.explain .con{
+  position: relative;
+  padding-left: 30rpx;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  color: #333;
+}
+.explain .con text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30rpx;
+  height: 40rpx;
+  font-size: 26rpx;
+  line-height: 40rpx;
+  color: #333;
+  text-align: center;
+}
+button{
+  width: 690rpx;
+  margin: 50rpx 0 50rpx 30rpx;
+  background-color: #ff5b5a;
+  color: #fff;
+}
+.button-hover{
+  background-color: #ff7271;
+  color: #fff;
+}

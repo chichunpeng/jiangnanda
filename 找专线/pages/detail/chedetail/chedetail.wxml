@@ -1,0 +1,26 @@
+<view class='body'>
+  <view class='header'>
+    <image src='../../static/imgs/icon02.png'></image>
+    <text class='tit'>车源</text>
+    <text class='tousu'>投诉</text>
+  </view>
+  <view class='content'>
+    <view class='con_top'>
+      <text class="iconfont icon-truck"></text>
+      <text class='route'>{{cheDetail.startcity}}——{{cheDetail.endcity}}</text>
+      <text class="stime">联系人：{{cheDetail.contacts}}</text>
+      <text class='etime'>空闲时间：{{cheDetail.freetime}}</text>
+      <text class="goods">车辆类型：{{cheDetail.cartype}}</text>
+      <text class="weight">载重：{{cheDetail.weight}}</text>
+      <text class='volume'>车长：{{cheDetail.carlength}}</text>
+      <text class="time">发布时间：{{cheDetail.time}}</text>
+    </view>
+    <view class='con_phone'>
+      <text class='phone'>联系电话：{{cheDetail.phone}}</text>
+      <text class='iconfont icon-dianhua' data-number='{{cheDetail.phone}}' bindtap='callphone'></text>
+    </view>
+    <view class='con_remark'>
+      <text class='ps'>（联系时请说是在江南达物流上看到的！）</text>
+    </view>
+  </view>
+</view>

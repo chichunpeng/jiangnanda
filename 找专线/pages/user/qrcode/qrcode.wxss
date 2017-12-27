@@ -1,0 +1,10 @@
+.qrcode{
+  position: relative;
+}
+.qrcode image{
+  position: absolute;
+  top: 200rpx;
+  left: 150rpx;
+  width: 450rpx;
+  height: 450rpx;
+}

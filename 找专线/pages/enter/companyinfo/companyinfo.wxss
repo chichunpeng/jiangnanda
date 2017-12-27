@@ -1,0 +1,146 @@
+@import "../../static/fonts/iconfont.wxss";
+
+.infoBox{
+  width: 100%;
+}
+.infoBox_li{
+  position: relative;
+  width: 690rpx;
+  height: 90rpx;
+  margin-left: 30rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.infoBox_li .comName,
+.infoBox_li .contacts,
+.infoBox_li .phone,
+.infoBox_li .comAddr{
+  position: absolute;
+  top: 30rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.infoBox_li .comName1,
+.infoBox_li .contacts1,
+.infoBox_li .phone1,
+.infoBox_li .comAddr1{
+  position: absolute;
+  top: 25rpx;
+  left: 150rpx;
+  width: 520rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.disclaimer{
+  position: relative;
+  width: 100%;
+  height: 75rpx;
+  background-color: #eee;
+}
+.disclaimer .Btn{
+  position: absolute;
+  top: 20rpx;
+  left: 35rpx;
+  width: 34rpx;
+  height: 34rpx;
+  font-size: 34rpx;
+  line-height: 34rpx;
+  color: #ff5b5a;
+  z-index: 10;
+}
+.disclaimer .Btn .iconfont{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 34rpx;
+  line-height: 34rpx;
+  color: #ff5b5a;
+}
+.disclaimer .b{
+  position: absolute;
+  top: 15rpx;
+  left: 85rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.disclaimer .r{
+  position: absolute;
+  top: 23rpx;
+  left: 210rpx;
+  font-size: 22rpx;
+  color: #ff5b5a;
+}
+.picture{
+  position: relative;
+  width: 100%;
+  height: 610rpx;
+}
+.picture image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.picture .txt{
+  position: absolute;
+  top: 25rpx;
+  left: 30rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.picture .pic1,
+.picture .pic2,
+.picture .pic3,
+.picture .pic4{
+  position: absolute;
+  top: 95rpx;
+  left: 85rpx;
+  width: 250rpx;
+  height: 165rpx;
+  font-size: 80rpx;
+  line-height: 165rpx;
+  text-align: center;
+  border: 2rpx dashed #aaa;
+}
+.picture .pic2{
+  left: 415rpx;
+}
+.picture .pic3{
+  top: 360rpx;
+}
+.picture .pic4{
+  top: 360rpx;
+  left: 415rpx;
+}
+.picture .txt1,
+.picture .txt2,
+.picture .txt3,
+.picture .txt4{
+  position: absolute;
+  top: 280rpx;
+  left: 137rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+.picture .txt2{
+  left: 475rpx;
+}
+.picture .txt3{
+  top: 545rpx;
+}
+.picture .txt4{
+  top: 545rpx;
+  left: 467rpx;
+}
+.submitBtn{
+  width: 100%;
+  height: 130rpx;
+  padding-top: 50rpx;
+  background-color: #eee;
+}
+.submitBtn button{
+  width: 690rpx;
+  margin-left: 30rpx;
+  color: #fff;
+  background-color: #ff5b5a;
+}

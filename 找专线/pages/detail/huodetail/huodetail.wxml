@@ -1,0 +1,26 @@
+<view class='body'>
+  <view class='header'>
+    <image src='../../static/imgs/icon02.png'></image>
+    <text class='tit'>货源</text>
+    <text class='tousu'>投诉</text>
+  </view>
+  <view class='content'>
+    <view class='con_top'>
+      <text class="iconfont icon-hezi"></text>
+      <text class='route'>{{huoDetail.startcity}}——{{huoDetail.endcity}}</text>
+      <text class="stime">发货时间：{{huoDetail.starttime}}</text>
+      <text class='etime'>到货时间：{{huoDetail.endtime}}</text>
+      <text class="goods">货物类型：{{huoDetail.goodstype}}</text>
+      <text class="weight">重量：{{huoDetail.weight}}</text>
+      <text class='volume'>体积：{{huoDetail.volume}}</text>
+      <text class="time">发布时间：{{huoDetail.time}}</text>
+    </view>
+    <view class='con_phone'>
+      <text class='phone'>联系电话：{{huoDetail.phone}}</text>
+      <text class='iconfont icon-dianhua' data-number='{{huoDetail.phone}}' bindtap='callphone'></text>
+    </view>
+    <view class='con_remark'>
+      <text class='ps'>（联系时请说是在江南达物流上看到的！）</text>
+    </view>
+  </view>
+</view>

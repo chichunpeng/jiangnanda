@@ -1,0 +1,9 @@
+<view class='myzhuanxian'>
+  <view class='myzhuanxian_li' wx:for='{{list}}' wx:for-item='item' wx:key=''>
+    <text class='zhuanxian'>{{item.startcity}}到{{item.endcity}}物流专线</text>
+    <text class='time'>发布时间：{{item.time}}</text>
+    <text class='edit' bindtap='toEdit' data-id='{{item.id}}'>编辑</text>
+    <text class='del' bindtap='toDel' data-id='{{item.id}}' data-index='{{index}}'>删除</text>
+  </view>
+</view>
+<button bindtap='toAdd'><text class='iconfont icon-icon021'></text>添加专线</button>

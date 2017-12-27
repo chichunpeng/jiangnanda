@@ -1,0 +1,91 @@
+<view class='search'>
+  <view class='start' bindtap='startBtn'>
+    {{start_txt}}
+    <text class='iconfont icon-xialajiantouxiangxia' wx:if="{{start_txt == '起点'}}"></text>
+  </view>
+  <view class='end' bindtap='endBtn'>
+    {{end_txt}}
+    <text class='iconfont icon-xialajiantouxiangxia' wx:if="{{end_txt == '终点'}}"></text>
+  </view>
+  <view class='Btn'>运价查询</view>
+  <view class='line'></view>
+</view>
+<!-- 选择城市 -->
+<view class='changeCity' wx:if="{{addrshow}}">
+  <view class='allcity'>
+    <view class='tit'>{{isstart?'选择出发地点':'选择目的地点'}}<view class='back' bindtap='back'>返回</view></view>
+    <view class='city' wx:for='{{addr}}' wx:for-item="item" wx:key='' data-index='{{index}}' bindtap="changeAddr">{{item}}</view>
+  </view>
+</view>
+<!-- 选择城市 -->
+<!-- 拼货 -->
+<view class='pinhuo'>
+  <view class='pinhuo_tit'>拼货</view>
+  <view class='pinhuo_con'>
+    <view class='tit'>
+      <view class='qibu_tit'>
+        <text>起步价</text>
+        <text>单件</text>
+      </view>
+      <view class='volume_tit'>
+        <text>轻货</text>
+        <text>(元/M³)</text>
+      </view>
+      <view class='weight_tit'>
+        <text>重货</text>
+        <text>(元/T)</text>
+      </view>
+      <view class='tisong_tit'>
+        <text>提送费</text>
+        <text>(元/票)</text>
+      </view>
+      <view class='time_tit'>
+        <text>运输时效</text>
+        <text>(H)</text>
+      </view>
+    </view>
+    <view class='qibu_con'><text>20元</text></view>
+    <view class='volume_con'><text>100</text></view>
+    <view class='weight_con'><text>100</text></view>
+    <view class='tisong_con'><text>100</text></view>
+    <view class='time_con'><text>6</text></view>
+  </view>
+</view>
+<!-- 整车 -->
+<view class='zhengche'>
+  <view class='zhengche_tit'>整车</view>
+  <view class='zhengche_con'>
+    <view class='tit'>
+      <view class='cartype_tit'><text>车型</text></view>
+      <view class='price_tit'><text>运价(元/单趟)</text></view>
+      <view class='time_tit'><text>运输时效(H)</text></view>
+    </view>
+    <view class='cartype_con'><text>2T(4.2M)</text></view>
+    <view class='price_con'><text>100</text></view>
+    <view class='time_con'><text>5</text></view>
+    <view class='cartype_con'><text>5T(6.8M)</text></view>
+    <view class='price_con'><text>200</text></view>
+    <view class='time_con'><text>5</text></view>
+    <view class='cartype_con'><text>8T(7.6M)</text></view>
+    <view class='price_con'><text>300</text></view>
+    <view class='time_con'><text>5</text></view>
+    <view class='cartype_con'><text>10T(9.6M)</text></view>
+    <view class='price_con'><text>400</text></view>
+    <view class='time_con'><text>5</text></view>
+    <view class='cartype_con'><text>20T(12.5M)</text></view>
+    <view class='price_con'><text>500</text></view>
+    <view class='time_con'><text>5</text></view>
+    <view class='cartype_con'><text>30T(17.5M)</text></view>
+    <view class='price_con'><text>600</text></view>
+    <view class='time_con'><text>5</text></view>
+  </view>
+</view>
+<view class='explain'>
+  <text class='tit'>运价说明</text>
+  <text class='con'><text>*</text>轻货与重货换算方式：1M³=255KG，两者取大计价；</text>
+  <text class='con'><text>*</text>货物包装以托盘（1.1m*1.2m*1.1m）为标准，否则单件属于特殊尺寸，按双倍打6折计算，托盘货不能叠货，按双倍打8折计算，以上非危险品货物报价；</text>
+  <text class='con'><text>*</text>货物数量10M³（5T）以上，免提送货费；</text>
+  <text class='con'><text>*</text>以上报价均含11%增值税发票税金、货物保险；不含各仓库、厂家装卸费</text>
+</view>
+
+<button bindtap='toYuyue'>提交预约</button>

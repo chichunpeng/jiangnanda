@@ -1,0 +1,50 @@
+<form bindsubmit="formSubmit">
+  <view class='addr'>
+    <view class='addr_li'>
+      <view class='start'>发货地：</view>
+      <view class='start1' bindtap='startBtn'>
+        {{start_txt}}
+      </view>
+    </view>
+    <view class='addr_li'>
+      <view class='end'>目的地：</view>
+      <view class='end1' bindtap='endBtn'>
+        {{end_txt}}
+      </view>
+    </view>
+  </view>
+  <view class='changeCity' wx:if="{{cityshow}}">
+    <view class='local'>
+      <view class='tit'>当前城市<view class='close' bindtap='close'>关闭</view></view>
+      <view class='city' bindtap='changeL'>{{local}}</view>
+    </view>
+    <view class='allcity'>
+      <view class='tit'>所有城市<view class='back' bindtap='back'>返回</view></view>
+      <view class='city' wx:for='{{list}}' wx:for-item="item" wx:key='' data-index='{{index}}' bindtap="{{isP?'changeP':'changeC'}}">{{item}}</view>
+    </view>
+  </view>
+  <view class='tit'>
+    <text>发货联系人信息</text>
+  </view>
+  <view class='info'>
+    <view class='info_li'>
+      <text>联系人：</text>
+      <input name='contacts' placeholder='请输入联系人' placeholder-style='color:#999' value='{{contacts}}'/>
+    </view>
+    <view class='info_li'>
+      <text>电话：</text>
+      <input name='phone' placeholder='请输入电话' placeholder-style='color:#999' value='{{phone}}' type='number'/>
+    </view>
+    <view class='info_li'>
+      <text>地址：</text>
+      <input name='addr' placeholder='请输入地址' placeholder-style='color:#999' value='{{comAddr}}'/>
+    </view>
+    <view class='info_li'>
+      <text>备注：</text>
+      <input name='remark' placeholder='请输入备注' placeholder-style='color:#999'/>
+    </view>
+  </view>
+  <view class='submitBtn'>
+    <button formType="submit">{{Btn_txt}}</button>
+  </view>
+</form>

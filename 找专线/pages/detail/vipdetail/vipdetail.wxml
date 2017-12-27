@@ -1,0 +1,6 @@
+<image src='{{imgsrc}}'></image>
+<view class='comName'>{{comName}}</view>
+<view class='route'>{{startcity}}——{{endcity}}</view>
+<view class='contacts'>联系人： {{contacts}}</view>
+<view class='phone'>手机号： {{phone}}</view>
+<view class='comAddr' bindtap='openMap'>公司地址： {{comAddr}}</view>

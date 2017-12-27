@@ -1,0 +1,2 @@
+<button bindtap='call'><text class='iconfont icon-dianhua1'></text>电话咨询</button>
+<button open-type='contact'><text class='iconfont icon-kefu'></text>在线客服</button>

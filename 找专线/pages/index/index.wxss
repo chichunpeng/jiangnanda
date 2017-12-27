@@ -1,0 +1,324 @@
+@import "../static/fonts/iconfont.wxss";
+
+swiper{
+	width: 100%;
+	height: 310rpx;
+}
+swiper image{
+	width: 100%;
+	height: 100%;
+}
+.index_nav{
+	width: 100%;
+	padding: 30rpx 0;
+}
+.index_nav .index_nav_li{
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	margin: 20rpx 0;
+}
+.index_nav .index_nav_li .iconfont{
+	font-size: 50rpx;
+	line-height: 85rpx;
+	width: 85rpx;
+	height: 85rpx;
+	border-radius: 50%;
+	background-color: #234200;
+	color: #fff;
+	margin: 0 auto;
+}
+.index_nav .index_nav_li text{
+	font-size: 26rpx;
+	color: #333;
+}
+.index_search{
+	position: relative;
+	width: 100%;
+	height: 105rpx;
+	background-color: #eee;
+}
+.index_search .addr_name{
+  position: absolute;
+  top: 20rpx;
+  left: 30rpx;
+  height: 60rpx;
+  width: 167rpx;
+  border: 2rpx solid #ddd;
+  border-radius: 8rpx;
+  background-color: #fff;
+}
+.index_search .addr_name .iconfont{
+  position: absolute;
+  top: 18rpx;
+  left: 10rpx;
+  font-size: 26rpx;
+  color: #b5b5b5;
+}
+.index_search .addr_name .city{
+  position: absolute;
+  top: 10rpx;
+  left: 40rpx;
+  width: 120rpx;
+  font-size: 30rpx;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.index_search input{
+  position: absolute;
+  top: 20rpx;
+  left: 220rpx;
+  width: 470rpx;
+  height: 60rpx;
+  border: 2rpx solid #ddd;
+  border-radius: 8rpx;
+  background-color: #fff;
+  padding: 0 15rpx;
+  font-size: 30rpx;
+}
+.index_search .icon-sousuo{
+  position: absolute;
+  top: 20rpx;
+  right: 30rpx;
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 34rpx;
+  color: #9f9f9f;
+  text-align: center;
+  z-index: 2;
+}
+.chehuo{
+  position: relative;
+  width: 100%;
+  height: 100rpx;
+}
+.chehuo .box{
+  position: absolute;
+  top: 20rpx;
+  left: 100rpx;
+  height: 70rpx;
+  width: 550rpx;
+  border: 2rpx solid #ff5b5a;
+  border-radius: 38rpx;
+}
+.chehuo .box .huoyuan,
+.chehuo .box .cheyuan,
+.chehuo .box .guoji{
+  display: inline-block;
+  width: 33.33%;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 70rpx;
+  text-align: center;
+  border-radius: 35rpx;
+}
+.chehuo .box .active{
+  color: #fff;
+  background-color: #ff5b5a;
+}
+.list_li{
+  position: relative;
+  width: 100%;
+  height: 165rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+.list_li image{
+  position: absolute;
+  top: 30rpx;
+  left: 30rpx;
+  width: 105rpx;
+  height: 105rpx;
+}
+.list_li .route{
+  position: absolute;
+  top: 40rpx;
+  left: 165rpx;
+  font-size: 32rpx;
+  color: #5e5e5e;
+}
+.list_li .need{
+  position: absolute;
+  top: 85rpx;
+  left: 165rpx;
+  font-size: 26rpx;
+  color: #5e5e5e;
+}
+.list_li .detail{
+  position: absolute;
+  top: 100rpx;
+  right: 30rpx;
+  font-size: 30rpx;
+  color: #ff5b5a;
+}
+.nav{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  background-color: #fff;
+  border-top: 2rpx solid #ddd;
+  z-index: 100;
+}
+.nav .nav_li{
+  display: inline-block;
+  width: 33%;
+  height: 100%;
+  text-align: center;
+}
+.nav .nav_li .iconfont{
+  display: block;
+  font-size: 60rpx;
+  line-height: 66rpx;
+}
+.nav .nav_li .nav_li_txt{
+  display: block;
+  font-size: 22rpx;
+}
+.nav .active{
+  color: #ff5b5a;
+}
+
+.userinfo{
+  position: relative;
+  width: 100%;
+  height: 125rpx;
+  border-bottom: 12rpx solid #eee;
+}
+.userinfo image{
+  position: absolute;
+  top: 13rpx;
+  left: 30rpx;
+  width: 105rpx;
+  height: 105rpx;
+  border-radius: 50%;
+}
+.userinfo .username{
+  position: absolute;
+  top: 48rpx;
+  left: 170rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+.userinfo .logout{
+  position: absolute;
+  top: 30rpx;
+  right: 0;
+  width: 120rpx;
+  height: 69rpx;
+  font-size: 30rpx;
+  line-height: 69rpx;
+  text-align: center;
+  color: #999;
+}
+.viplist{
+  position: relative;
+  width: 100%;
+}
+.viplist .cominfo,
+.viplist .add,
+.viplist .addNa,
+.viplist .share,
+.viplist .privilege{
+  position: absolute;
+  top: 24rpx;
+  left: 30rpx;
+  font-size: 48rpx;
+  color: #fe4d01;
+}
+.viplist .add{
+  top: 142rpx;
+  color: #fe5b5a;
+}
+.viplist .addNa{
+  top: 250rpx;
+  color: #00cd1d;
+}
+.viplist .share{
+  top: 360rpx;
+  color: #fee200;
+}
+.viplist .privilege{
+  top: 470rpx;
+  color: #38bbe3;
+}
+.viplist .cominfo1,
+.viplist .add1,
+.viplist .addNa1,
+.viplist .share1,
+.viplist .privilege1{
+  position: absolute;
+  top: 0;
+  left: 110rpx;
+  width: 640rpx;
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 30rpx;
+  color: #666;
+  border-bottom: 2rpx solid #eee;
+}
+.viplist .add1{
+  top: 110rpx;
+}
+.viplist .addNa1{
+  top: 220rpx;
+}
+.viplist .share1{
+  top: 330rpx;
+}
+.viplist .privilege1{
+  top: 440rpx;
+}
+
+.userlist{
+  position: relative;
+  width: 100%;
+  height: 250rpx;
+}
+.userlist .yuyue,
+.userlist .kefu,
+.userlist .QR,
+.userlist .opinion{
+  position: absolute;
+  top: 24rpx;
+  left: 30rpx;
+  font-size: 48rpx;
+  color: #ff8900;
+}
+.userlist .kefu{
+  top: 142rpx;
+  color: #38bbe3;
+}
+.userlist .QR{
+  top: 250rpx;
+  color: #32ce28;
+}
+.userlist .opinion{
+  top: 360rpx;
+  color: #dc2e41;
+}
+.userlist .yuyue1,
+.userlist .kefu1,
+.userlist .QR1,
+.userlist .opinion1{
+  position: absolute;
+  top: 0;
+  left: 110rpx;
+  width: 640rpx;
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 30rpx;
+  color: #666;
+  border-bottom: 2rpx solid #eee;
+}
+.userlist .kefu1{
+  top: 110rpx;
+}
+.userlist .QR1{
+  top: 220rpx;
+}
+.userlist .opinion1{
+  top: 330rpx;
+}

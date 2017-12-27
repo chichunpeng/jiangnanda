@@ -1,0 +1,13 @@
+<view class='Login_box'>
+  <view class='username'>
+    <view class='iconfont icon-yonghu'></view>
+    <input placeholder='用户名' type='number' bindinput='Getusername'></input>
+  </view>
+  <view class='password'>
+    <view class='iconfont icon-mima'></view>
+    <input placeholder='密码' password='true' bindinput='Getpassword'></input>
+  </view>
+  <button class='login' bindtap='Login'>登录</button>
+  <button class='register' bindtap='toRegister'>注册</button>
+  <text class='losepwd' bindtap='losepwd'>忘记账号或密码</text>
+</view>

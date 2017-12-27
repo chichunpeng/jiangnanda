@@ -1,0 +1,6 @@
+<view class='yuyuelist' wx:for='{{myYuyue}}' wx:for-item='item' wx:key=''>
+  <text class='time'>预约时间：{{item.time}}</text>
+  <text class='con'>预约内容：{{item.content}}</text>
+</view>
+
+<button bindtap='toAddyuyue'><text class='iconfont icon-icon021'></text>添加预约</button>

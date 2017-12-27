@@ -1,0 +1,35 @@
+@import "../JPJC/JPJC.wxss";
+
+.pinhuo_con .tit .qibu_tit,
+.pinhuo_con .tit .weight_tit,
+.pinhuo_con .tit .volume_tit,
+.pinhuo_con .tit .tisong_tit,
+.pinhuo_con .tit .time_tit{
+  display: inline-block;
+  width: 20%;
+  height: 96rpx;
+  background-color: #ff5b5a;
+  color: #fff;
+  text-align: center;
+  border-right: 3rpx solid #fff;
+}
+
+.pinhuo_con .qibu_con,
+.pinhuo_con .weight_con,
+.pinhuo_con .volume_con,
+.pinhuo_con .tisong_con,
+.pinhuo_con .time_con{
+  display: inline-block;
+  width: 20%;
+  height: 48rpx;
+  color: #333;
+  text-align: center;
+  border-right: 3rpx solid #eee;
+  border-bottom: 2rpx solid #eee;
+  vertical-align: top;
+}
+
+.pinhuo_con .time_con{
+  border-right: none;
+  width: 19%;
+}
